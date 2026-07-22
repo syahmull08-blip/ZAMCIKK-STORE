@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZAMCIKK STORE</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>ZAMCIKK STORE</h1>
+        <p>PAKET AKRAB XL AXIS</p>
+    </div>
+
+</header>
+
+<section class="top-menu">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Cari produk..."
+    >
+
+    <button id="refreshBtn">
+        🔄 Refresh
+    </button>
+
+</section>
+
+<section class="kategori">
+
+    <button class="tab active" data-type="all">
+        Semua
+    </button>
+
+    <button class="tab" data-type="xla">
+        XLA
+    </button>
+
+    <button class="tab" data-type="xda">
+        XDA
+    </button>
+
+    <button class="tab" data-type="xlf">
+        XLF
+    </button>
+
+</section>
+
+<section class="info">
+
+    <div class="info-card">
+        <span>Total Produk</span>
+        <h3 id="totalProduk">0</h3>
+    </div>
+
+    <div class="info-card">
+        <span>Tersedia</span>
+        <h3 id="produkReady">0</h3>
+    </div>
+
+    <div class="info-card">
+        <span>Update</span>
+        <h3 id="lastUpdate">--:--</h3>
+    </div>
+
+</section>
+
+<section id="produk" class="produk-grid">
+
+    <!-- Produk otomatis dari API -->
+
+</section>
+
+<div class="loading" id="loading">
+
+    Memuat Produk...
+
+</div>
+
+<button id="scrollTop">
+
+⬆
+
+</button>
+
+<footer>
+
+    <p>Powered by <b>ZAMCIKK STORE</b></p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
