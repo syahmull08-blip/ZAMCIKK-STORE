@@ -162,15 +162,23 @@ opacity:.7;
 
 function order(code,nama,harga){
 
-const pesan=
+const nomor = prompt(
+`Order ${product.name} (${product.code})
 
-`Halo kak 
+Harga : Rp${harga}
 
-Saya ingin membeli Paket Akrab.
+Nomor Tujuan :`
+);
 
-Produk : ${nama}
-Kode : ${code}
-Harga : Rp ${harga.toLocaleString("id-ID")}
+if (!nomor) return;
+
+const text = `Halo kak 👋
+
+Saya ingin membeli ${product.name}.
+
+Nomor Tujuan : ${nomor}
+
+Harga : Rp${harga}
 
 Mohon diproses ya. Terima kasih.`;
 
