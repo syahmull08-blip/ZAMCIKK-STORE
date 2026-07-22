@@ -160,38 +160,36 @@ opacity:.7;
 
 }
 
-function order(code,nama,harga){
+function order(code, nama, harga){
 
-const nomor = prompt(
-`Order ${product.name} (${product.code})
+    const nomor = prompt(
+`Order ${nama} (${code})
 
-Harga : Rp${harga}
+Harga : Rp${harga.toLocaleString("id-ID")}
 
 Nomor Tujuan :`
-);
+    );
 
-if (!nomor) return;
+    if (!nomor) return;
 
-const text = `Halo kak 👋
+    const pesan = `Halo kak 👋
 
-Saya ingin membeli ${product.name}.
+Saya ingin membeli Paket Akrab.
 
 Nomor Tujuan : ${nomor}
 
-Harga : Rp${harga}
+Produk : ${nama}
+Kode : ${code}
+Harga : Rp ${harga.toLocaleString("id-ID")}
 
 Mohon diproses ya. Terima kasih.`;
 
-window.open(
-
-`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`,
-
-"_blank"
-
-);
+    window.open(
+        `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`,
+        "_blank"
+    );
 
 }
-
 document
 .getElementById("search")
 .addEventListener("input",renderProducts);
