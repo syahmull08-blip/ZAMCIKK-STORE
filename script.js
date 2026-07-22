@@ -172,7 +172,7 @@ Nomor Tujuan :`
 
     if (!nomor) return;
 
-    const pesan = `Halo kak 👋
+    const pesan = `Halo kak 
 
 Saya ingin membeli Paket Akrab.
 
