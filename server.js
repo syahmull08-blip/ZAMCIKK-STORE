@@ -33,7 +33,7 @@ app.get("/api/products", async (req, res) => {
         console.error(err.response?.data || err.message);
         res.status(500).json({
             success: false,
-            message: "Gagal mengambil data produk",
+            error: err.response?.data || err.message,
         });
     }
 });
