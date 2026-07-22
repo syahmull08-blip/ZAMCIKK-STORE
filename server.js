@@ -12,7 +12,7 @@ app.use(express.static("."));
 app.get("/api/products", async (req, res) => {
     try {
         const response = await axios.get(
-            `${process.env.BASE_URL}/products`
+            `${process.env.BASE_URL}/products`,
             {
                 headers: {
                     Authorization: `Bearer ${process.env.API_KEY}`,
