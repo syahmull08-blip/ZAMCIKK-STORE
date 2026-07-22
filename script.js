@@ -184,10 +184,8 @@ Harga : Rp ${harga.toLocaleString("id-ID")}
 
 Mohon diproses ya. Terima kasih.`;
 
-    window.open(
-        `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`,
-        "_blank"
-    );
+    location.href =
+    `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(pesan)}`;
 
 }
 document
